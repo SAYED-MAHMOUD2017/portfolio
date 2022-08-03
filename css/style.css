@@ -10,12 +10,13 @@
     box-sizing: border-box;
     text-transform: capitalize;
 }
-html {
-    scroll-behavior: smooth;
-}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
+}
+::selection {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
 }
 .overly::before {
     content: "";
@@ -26,8 +27,12 @@ body {
     left: 0;
     top: 0;
 }
-ul {list-style: none;}
-p {color: #4e4e4e;}
+ul {
+    list-style: none;
+}
+p {
+    color: #4e4e4e;
+}
 a {
     text-decoration: none;
     display: block;
@@ -66,21 +71,23 @@ a {
 nav ul li a {
     color: var(--c-white);
 }
-nav ul.menu > li > a::before {
+nav ul .nav-item a::before {
     content: '';
     width: 80%;
     height: 2px;
-    background-color: var(--c-white);
+    background-color: var(--c-main);
     position: absolute;
     bottom: 0;
     left: -80%;
     transition: left .3s;
 }
-nav ul.menu > li > a:hover::before {
+nav ul .nav-item a:hover::before,
+nav ul .nav-item a.active::before {
     left: 0;
 }
-nav a:hover {
-    color: var(--c-white);
+nav a:hover,
+.active {
+    color: var(--c-main2);
 }
 .navbar-toggler:focus {
     box-shadow: none;
