@@ -2,6 +2,7 @@ let navbar = $("nav");
 let aboutOffset = $("#about").offset().top;
 $("nav a").click((e)=> {
     $(e.target).addClass("active").parent().siblings().find("a").removeClass("active");
+    // $("html, body").scroll({scrollTop: `${}`})
 })
 $(window).scroll(()=>{
     if ($("html, body").scrollTop() >= aboutOffset - 50) {

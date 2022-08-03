@@ -4,23 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-  <title>Portflio</title>
-=======
   <title>Portfolio</title>
->>>>>>> bbb666e774a9d9cffb258b91a5636823d241ce9b
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/s-logo.jpg">
+  <link rel="icon" href="images/s-logo1.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Start navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-danavbar-dark position-fixed fixed-top">
     <div class="container position-relative">
-      <a class="navbar-brand ps-0" href="#">Sayed</a>
+      <a class="navbar-brand ps-0" href="#"><img src="images/s-logo1.png" alt=""></a>
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa-solid fa-bars"></span>
       </button>
@@ -28,7 +23,6 @@
         <ul class="menu navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="py-2 px-0 ms-4 position-relative overflow-hidden active" aria-current="page" href="#home">Home</a></li>
           <li class="nav-item"><a class="py-2 px-0 ms-4 position-relative overflow-hidden" href="#about">about</a></li>
-          <li class="nav-item"><a class="py-2 px-0 ms-4 position-relative overflow-hidden" href="#services">services</a></li>
           <li class="nav-item"><a class="py-2 px-0 ms-4 position-relative overflow-hidden" href="#work">work</a></li>
           <li class="nav-item"><a class="py-2 px-0 ms-4 position-relative overflow-hidden" href="#contact">contact</a></li>
         </ul>
@@ -43,13 +37,13 @@
         <div class="myself text-center text-white">
           <!-- <img class="rounded rounded-circle mb-3" src="images/images02.jpg" alt="me"> -->
           <img class="rounded rounded-circle mb-3" src="images/me.gif" alt="me">
-          <h1>I am Morgan Freeman</h1>
+          <h1>I am sayed mahmoud</h1>
           <div class="jobs mx-auto overflow-hidden position-relative">
             <ul class="m-0 p-0">
-              <li class="mx-auto ps-1 h2 overflow-hidden position-relative">Developer</li>
-              <li class="mx-auto ps-1 h2 overflow-hidden position-relative">Designer</li>
-              <li class="mx-auto ps-1 h2 overflow-hidden position-relative">Freelancer</li>
-              <li class="mx-auto ps-1 h2 overflow-hidden position-relative">Photographer</li>
+              <li class="mx-auto ps-1 fs-3 overflow-hidden position-relative">Developer</li>
+              <!-- <li class="mx-auto ps-1 fs-3 overflow-hidden position-relative">Designer</li> -->
+              <li class="mx-auto ps-1 fs-3 overflow-hidden position-relative">Freelancer</li>
+              <!-- <li class="mx-auto ps-1 fs-3 overflow-hidden position-relative">Photographer</li> -->
             </ul>
           </div>
         </div>
@@ -59,21 +53,28 @@
   
   <!-- Start about section -->
   <section class="about px-3 py-5" id="about">
-    <div class="container">
-      <div class="content bg-white d-flex flex-wrap shadow">
-        <div class="info w-50 px-5 py-5">
-          <div class="myself pb-3 d-flex align-items-start justify-content-between flex-wrap">
-            <!-- <img class="rounded mb-5" src="images/images02.jpg" alt="me"> -->
-            <img class="rounded mb-5" src="images/me.gif" alt="me">
+    <div class="container bg-white d-flex flex-wrap shadow">
+        <div class="info w-50 p-5">
+          <div class="myself pb-3 d-flex flex-column text-center">
+            <img class="rounded mb-5 mx-auto" src="images/me.gif" alt="me">
             <ul class="p-0 list-unstyled">
               <li class="p-1"><span class="fw-bold fs-5">Name: </span>sayed mahmoud</li>
               <li class="p-1"><span class="fw-bold fs-5">Profile: </span>front end developer</li>
               <li class="p-1"><span class="fw-bold fs-5">Email: </span>sayed.m.m.e2017@gmail.com</li>
               <li class="p-1"><span class="fw-bold fs-5">phone: </span>+20 0120-0949-750</li>
             </ul>
+            <div class="icons">
+              <i class="fa-brands fa-facebook  rounded-circle p-2 m-2"></i>
+              <i class="fa-brands fa-instagram rounded-circle p-2 m-2"></i>
+              <i class="fa-brands fa-twitter   rounded-circle p-2 m-2"></i>
+              <i class="fa-brands fa-linkedin  rounded-circle p-2 m-2"></i>
+            </div>
           </div>
-          <div class="skills">
-            <h4>skills</h4>
+        </div>
+
+        <div class="aboutme w-50 px-4 py-5">
+          <div class="skills d-flex flex-column text-center justify-content-between">
+            <h4 class="mb-5">skills</h4>
             <ul class="d-flex flex-wrap justify-content-between">
                 <li class="p-2 rounded m-1">HTML5</li>
                 <li class="p-2 rounded m-1">CSS3</li>
@@ -94,19 +95,12 @@
             </ul>
           </div>
         </div>
-        <div class="aboutme w-50 px-4 py-5">
-          <h2 class="mb-5 position-relative">about me</h2>
-          <p class="fst-normal fs-5 fw-light mt-4">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
-          <p class="fst-normal fs-5 fw-light mt-4">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
-          <p class="fst-normal fs-5 fw-light mt-4">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-        </div>
-      </div>
     </div>
   </section>
   <!-- End about section -->
 
   <!-- Start services section -->
-  <section class="services" id="services">
+  <!-- <section class="services" id="services">
     <div class="main-heading position-relative pb-3 mx-auto my-5">
       <h2 class="fw-bolder h1 text-uppercase text-center">services</h2>
       <p class="text-center my-3 px-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -142,16 +136,15 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End services section -->
 
   <!-- Start portfolio section -->
 <section class="portfolio" id="work">
     <div class="main-heading position-relative pb-3 mx-auto my-5">
       <h2 class="fw-bolder h1 text-uppercase text-center">portfolio</h2>
-      <p class="text-center my-3 px-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <div class="container" id="project">
+    <div class="container pb-5" id="project">
       <div class="row">
         <div class="col-md-4">
           <div class="box bg-white my-4 shadow" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
@@ -269,7 +262,7 @@
     <div class="overly">
       <div class="container bg-white p-5 d-flex flex-wrap justify-content-between">
         <div class="box column w-50 pe-3">
-          <h2 class="mb-5 position-relative">send message us</h2>
+          <h2 class="mb-5 position-relative">send message</h2>
           <div class="my-3">
             <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name">
           </div>
@@ -304,8 +297,7 @@
     </div>
   </div>
   <footer class="bg-primary text-center py-4">
-    <p class=" text-white m-0 fw-light"><span class="fs-5">&copy;</span> Copyright <span class="fw-bold">sayed mahmoud</span>. All Rights Reserved</p>
-    <p class="text-white fw-light m-0 d-flex align-items-center justify-content-center">Designed by <a class="text-white" href="https://bootstrapmade.com/">BootstrapMade</a></p>
+    <p class=" text-white m-0 fw-light"><span class="fs-5">&copy;</span> Copyright <span class="fw-bold">sayed mahmoud.</span></p>
   </footer>
   <!-- End contact section -->
 
