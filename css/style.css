@@ -77,6 +77,12 @@ a {
     position: absolute;
     bottom: -.75rem;
 }
+.angular {
+    color: #b52e31;
+}
+.js-logo {
+    color: #f7df1e;
+}
 /* Start navbar */
 nav {
     background-color: rgba(0, 0, 0, .4);
